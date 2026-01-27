@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Block Gambling Sites on Mac (Hard vs Easy Mode)</title>
-    <meta name="description" content="A complete guide to self-exclusion on macOS. Compare the 3 ways to block gambling sites: Manual Terminal edits, subscription apps, and SaneHosts.">
-    <meta name="keywords" content="block gambling mac, self-exclusion macos, stop betting sites mac, hosts file blocklist, gambling blocker mac">
+    <title>How to Block Adobe Background Processes on Mac (Creative Cloud)</title>
+    <meta name="description" content="Stop Adobe Creative Cloud from phoning home. Compare 3 ways to block Adobe telemetry on macOS: Manual hosts edits, Little Snitch, and SaneHosts.">
+    <meta name="keywords" content="block adobe mac, stop creative cloud background, adobe genuine service disable, hosts file adobe, little snitch alternative">
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="How to Block Gambling Sites on Mac (Hard vs Easy Mode)">
-    <meta property="og:description" content="System-wide protection. Manual vs Subscription vs SaneHosts.">
+    <meta property="og:title" content="How to Block Adobe Background Processes on Mac">
+    <meta property="og:description" content="Manual edits vs. Firewalls vs. SaneHosts. Stop the telemetry.">
     <meta property="og:image" content="https://sanehosts.com/og-image.png">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sanehosts.com/block-gambling.html">
+    <meta property="og:url" content="https://sanehosts.com/block-adobe.html">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -187,9 +187,9 @@
     </nav>
 
     <article class="container">
-        <h1>How to Block Gambling Sites on Mac (Hard vs. Easy Mode)</h1>
-        <p>Whether you're practicing self-exclusion or removing distractions, blocking gambling sites at the browser level isn't enough. Extensions are too easy to disable. You need <strong>system-level blocking</strong> that works across Safari, Chrome, and native apps.</p>
-        <p>Here are the three ways to do it. Choose the one that fits your needs.</p>
+        <h1>How to Block Adobe Background Processes on Mac</h1>
+        <p>Even when you close Photoshop or Lightroom, Adobe Creative Cloud continues to run dozens of background processes (like <code>Adobe Desktop Service</code>, <code>CCXProcess</code>, and <code>Core Sync</code>). These consume battery, CPU, and send telemetry data constantly.</p>
+        <p>If you want to stop the "phoning home" without breaking your ability to use the apps offline, you need to block their servers. Here are your three options.</p>
 
         <hr style="border: 0; border-top: 1px solid var(--border); margin: 40px 0;">
 
@@ -199,52 +199,55 @@
                 <div class="option-title">Option 1: The Hard Way (Terminal)</div>
                 <span class="option-badge badge-free">Free</span>
             </div>
-            <p>You can edit your Mac's <code>/etc/hosts</code> file manually. It costs nothing but is technically demanding and risky if you delete the wrong line.</p>
+            <p>You can manually redirect Adobe's verification servers to <code>0.0.0.0</code> in your hosts file. This is effective but fragile.</p>
             
             <pre>sudo nano /etc/hosts</pre>
-            <p>You'll need to find a blocklist (like StevenBlack's), paste thousands of domains manually, and flush your DNS cache.</p>
+            <p>You'll need to find an up-to-date list of Adobe domains (they change frequently) and paste them in.</p>
+            <pre>0.0.0.0 ic.adobe.io
+0.0.0.0 cc-api-data.adobe.io
+# ... and 50 more ...</pre>
 
             <div class="pros-cons">
                 <div>
                     <strong>Pros</strong>
                     <ul class="pc-list">
                         <li><span class="icon-check">✓</span> <div>Completely free</div></li>
-                        <li><span class="icon-check">✓</span> <div>No software to install</div></li>
+                        <li><span class="icon-check">✓</span> <div>No extra software</div></li>
                     </ul>
                 </div>
                 <div>
                     <strong>Cons</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Very tedious to update</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Easy to break internet</div></li>
-                        <li><span class="icon-cross">✗</span> <div>No easy toggle</div></li>
+                        <li><span class="icon-cross">✗</span> <div>Hard to toggle (might need to sign in)</div></li>
+                        <li><span class="icon-cross">✗</span> <div>Adobe updates often break this</div></li>
+                        <li><span class="icon-cross">✗</span> <div>Risky (can break app updates)</div></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Option 2: Subscription -->
+        <!-- Option 2: Firewall -->
         <div class="option-card">
             <div class="option-header">
-                <div class="option-title">Option 2: The Subscription Way</div>
-                <span class="option-badge badge-sub">$49+ or Monthly</span>
+                <div class="option-title">Option 2: The Firewall Way</div>
+                <span class="option-badge badge-sub">$45+ (Little Snitch)</span>
             </div>
-            <p>Apps like Cold Turkey or Gamban are powerful but expensive. They often use invasive system extensions or VPNs to monitor your traffic.</p>
+            <p>Application firewalls like Little Snitch or LuLu are excellent for monitoring specific apps and blocking their connections.</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Pros</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div>Hard to bypass</div></li>
-                        <li><span class="icon-check">✓</span> <div>Cross-device options</div></li>
+                        <li><span class="icon-check">✓</span> <div>Granular per-app control</div></li>
+                        <li><span class="icon-check">✓</span> <div>Visual connection monitor</div></li>
                     </ul>
                 </div>
                 <div>
                     <strong>Cons</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Expensive recurring cost</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Privacy invasive (monitoring)</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Can slow down network</div></li>
+                        <li><span class="icon-cross">✗</span> <div>Expensive ($45+)</div></li>
+                        <li><span class="icon-cross">✗</span> <div>Constant "Allow/Deny" popups</div></li>
+                        <li><span class="icon-cross">✗</span> <div>High learning curve</div></li>
                     </ul>
                 </div>
             </div>
@@ -256,16 +259,16 @@
                 <div class="option-title">Option 3: The Sane Way</div>
                 <span class="option-badge badge-sane">$5 One-Time</span>
             </div>
-            <p><strong>SaneHosts</strong> gives you the power of the hosts file with the safety of a modern Mac app. It includes the "StevenBlack Gambling" list built-in and auto-updates it.</p>
+            <p><strong>SaneHosts</strong> allows you to create a "Block Adobe" profile. You can import a list of Adobe domains and toggle them on/off instantly from the menu bar.</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Why it wins</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div><strong>Family Safe Profile:</strong> Pre-configured to block gambling & adult content</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Touch ID Locked:</strong> Adds friction. You can't disable it without bio-auth</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Native:</strong> No background monitoring, no VPN, 100% private</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Auto-Updates:</strong> New betting sites blocked automatically</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Toggle Instantly:</strong> Turn off the block when you need to update apps</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Auto DNS Flush:</strong> Changes apply immediately</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Touch ID Protected:</strong> Secure your settings</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Cheap:</strong> 10x cheaper than a firewall</div></li>
                     </ul>
                 </div>
             </div>
@@ -279,7 +282,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 SaneApps. Built for a Sound Mind.</p>
-            <p style="margin-top: 12px;"><a href="/" style="color: var(--text-muted);">Home</a> • <a href="privacy.html" style="color: var(--text-muted);">Privacy</a></p>
+            <p style="margin-top: 12px;"><a href="/" style="color: var(--text-muted);">Home</a> • <a href="block-social-media.html" style="color: var(--text-muted);">Block Social Media</a></p>
         </div>
     </footer>
 </body>

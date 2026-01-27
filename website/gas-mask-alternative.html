@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Block Gambling Sites on Mac (Hard vs Easy Mode)</title>
-    <meta name="description" content="A complete guide to self-exclusion on macOS. Compare the 3 ways to block gambling sites: Manual Terminal edits, subscription apps, and SaneHosts.">
-    <meta name="keywords" content="block gambling mac, self-exclusion macos, stop betting sites mac, hosts file blocklist, gambling blocker mac">
+    <title>Gas Mask for Mac Not Working? The Native Alternative (2026)</title>
+    <meta name="description" content="Gas Mask keeps crashing on macOS Sequoia/Sonoma? Replace it with SaneHosts, the native Apple Silicon hosts file manager with Touch ID.">
+    <meta name="keywords" content="gas mask mac alternative, gas mask crashing, hosts file manager mac, gas mask apple silicon, sanehosts">
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="How to Block Gambling Sites on Mac (Hard vs Easy Mode)">
-    <meta property="og:description" content="System-wide protection. Manual vs Subscription vs SaneHosts.">
+    <meta property="og:title" content="Gas Mask for Mac Not Working? The Native Alternative">
+    <meta property="og:description" content="Stop struggling with abandonware. Upgrade to the modern, native hosts manager.">
     <meta property="og:image" content="https://sanehosts.com/og-image.png">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sanehosts.com/block-gambling.html">
+    <meta property="og:url" content="https://sanehosts.com/gas-mask-alternative.html">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,18 +83,6 @@
 
         p { margin-bottom: 24px; color: var(--text-secondary); font-size: 1.1rem; }
         
-        pre {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            padding: 20px;
-            border-radius: 12px;
-            overflow-x: auto;
-            margin-bottom: 32px;
-            font-family: 'Menlo', 'Monaco', monospace;
-            font-size: 0.9rem;
-            color: #a5b3ce;
-        }
-
         /* Comparison Cards */
         .option-card {
             background: var(--bg-card);
@@ -114,8 +102,7 @@
         .option-title { font-size: 1.4rem; font-weight: 600; color: var(--text-primary); }
         .option-badge { font-size: 0.85rem; padding: 4px 12px; border-radius: 100px; font-weight: 600; }
         
-        .badge-free { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
-        .badge-sub { background: rgba(244, 162, 97, 0.15); color: #f4a261; }
+        .badge-legacy { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
         .badge-sane { background: rgba(79, 143, 250, 0.15); color: var(--accent); }
 
         .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
@@ -125,16 +112,15 @@
             font-size: 0.95rem; 
             margin-bottom: 12px; 
             display: flex; 
-            align-items: flex-start; /* Align icon to top of text */
+            align-items: flex-start;
             gap: 10px; 
             line-height: 1.5;
         }
         
-        /* Fixed width for icons to ensure alignment */
         .icon-check, .icon-cross { 
             flex-shrink: 0; 
             width: 18px; 
-            margin-top: 2px; /* Optical alignment with text cap-height */
+            margin-top: 2px;
         }
         
         .icon-check { color: var(--success); }
@@ -187,85 +173,57 @@
     </nav>
 
     <article class="container">
-        <h1>How to Block Gambling Sites on Mac (Hard vs. Easy Mode)</h1>
-        <p>Whether you're practicing self-exclusion or removing distractions, blocking gambling sites at the browser level isn't enough. Extensions are too easy to disable. You need <strong>system-level blocking</strong> that works across Safari, Chrome, and native apps.</p>
-        <p>Here are the three ways to do it. Choose the one that fits your needs.</p>
+        <h1>Gas Mask for Mac Not Working? The Native Alternative</h1>
+        <p>For years, <strong>Gas Mask</strong> was the gold standard for managing hosts files on macOS. But lately, users are reporting crashes on macOS Sequoia and Sonoma, broken auto-updates, and issues with Apple Silicon (M1/M2/M3) chips.</p>
+        <p>That's because Gas Mask hasn't seen a major update since 2018. It's built on older technologies that don't play well with modern macOS security.</p>
+        <p>If you're looking for a replacement that feels familiar but works on modern Macs, meet <strong>SaneHosts</strong>.</p>
 
         <hr style="border: 0; border-top: 1px solid var(--border); margin: 40px 0;">
 
-        <!-- Option 1: Manual -->
+        <!-- Option 1: Gas Mask -->
         <div class="option-card">
             <div class="option-header">
-                <div class="option-title">Option 1: The Hard Way (Terminal)</div>
-                <span class="option-badge badge-free">Free</span>
+                <div class="option-title">Option 1: Stick with Gas Mask</div>
+                <span class="option-badge badge-legacy">Open Source (Legacy)</span>
             </div>
-            <p>You can edit your Mac's <code>/etc/hosts</code> file manually. It costs nothing but is technically demanding and risky if you delete the wrong line.</p>
-            
-            <pre>sudo nano /etc/hosts</pre>
-            <p>You'll need to find a blocklist (like StevenBlack's), paste thousands of domains manually, and flush your DNS cache.</p>
+            <p>You can try to keep using Gas Mask, but you'll likely need to run it under Rosetta translation and deal with bugs.</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Pros</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div>Completely free</div></li>
-                        <li><span class="icon-check">✓</span> <div>No software to install</div></li>
+                        <li><span class="icon-check">✓</span> <div>Free</div></li>
+                        <li><span class="icon-check">✓</span> <div>Familiar interface</div></li>
                     </ul>
                 </div>
                 <div>
                     <strong>Cons</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Very tedious to update</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Easy to break internet</div></li>
-                        <li><span class="icon-cross">✗</span> <div>No easy toggle</div></li>
+                        <li><span class="icon-cross">✗</span> <div><strong>Crashes:</strong> Unstable on macOS 14+</div></li>
+                        <li><span class="icon-cross">✗</span> <div><strong>Security:</strong> No Touch ID integration</div></li>
+                        <li><span class="icon-cross">✗</span> <div><strong>Performance:</strong> Not native Apple Silicon</div></li>
+                        <li><span class="icon-cross">✗</span> <div><strong>Abandoned:</strong> No updates in years</div></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Option 2: Subscription -->
-        <div class="option-card">
-            <div class="option-header">
-                <div class="option-title">Option 2: The Subscription Way</div>
-                <span class="option-badge badge-sub">$49+ or Monthly</span>
-            </div>
-            <p>Apps like Cold Turkey or Gamban are powerful but expensive. They often use invasive system extensions or VPNs to monitor your traffic.</p>
-
-            <div class="pros-cons">
-                <div>
-                    <strong>Pros</strong>
-                    <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div>Hard to bypass</div></li>
-                        <li><span class="icon-check">✓</span> <div>Cross-device options</div></li>
-                    </ul>
-                </div>
-                <div>
-                    <strong>Cons</strong>
-                    <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Expensive recurring cost</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Privacy invasive (monitoring)</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Can slow down network</div></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Option 3: SaneHosts -->
+        <!-- Option 2: SaneHosts -->
         <div class="option-card winner-card">
             <div class="option-header">
-                <div class="option-title">Option 3: The Sane Way</div>
+                <div class="option-title">Option 2: Upgrade to SaneHosts</div>
                 <span class="option-badge badge-sane">$5 One-Time</span>
             </div>
-            <p><strong>SaneHosts</strong> gives you the power of the hosts file with the safety of a modern Mac app. It includes the "StevenBlack Gambling" list built-in and auto-updates it.</p>
+            <p><strong>SaneHosts</strong> is the spiritual successor to Gas Mask for the modern era. It's native, fast, and uses the latest Apple security frameworks.</p>
 
             <div class="pros-cons">
                 <div>
-                    <strong>Why it wins</strong>
+                    <strong>Why it's better</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div><strong>Family Safe Profile:</strong> Pre-configured to block gambling & adult content</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Touch ID Locked:</strong> Adds friction. You can't disable it without bio-auth</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Native:</strong> No background monitoring, no VPN, 100% private</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Auto-Updates:</strong> New betting sites blocked automatically</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Native:</strong> Built with Swift/SwiftUI for Apple Silicon</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Touch ID:</strong> Securely switch profiles without typing passwords</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Modern:</strong> Works perfectly on macOS Sequoia & Sonoma</div></li>
+                        <li><span class="icon-check">✓</span> <div><strong>Curated:</strong> 200+ built-in blocklists (ads, trackers, social)</div></li>
                     </ul>
                 </div>
             </div>
@@ -273,6 +231,9 @@
             <a href="https://sanebar.lemonsqueezy.com/checkout/buy/83977cc9-900f-407f-a098-959141d474f2" class="btn">Get SaneHosts — $5</a>
             <p style="text-align: center; font-size: 0.85rem; margin-top: 16px; color: var(--text-muted);">Compatible with macOS 14 (Sonoma) and later.</p>
         </div>
+
+        <h2>Migration is Easy</h2>
+        <p>You don't need to manually export anything. Just copy your host entries from Gas Mask's editor and paste them into a new SaneHosts profile. Or, use SaneHosts' built-in "Remote Import" to fetch your blocklists directly from their URLs.</p>
 
     </article>
 

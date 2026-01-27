@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Block Gambling Sites on Mac (Hard vs Easy Mode)</title>
-    <meta name="description" content="A complete guide to self-exclusion on macOS. Compare the 3 ways to block gambling sites: Manual Terminal edits, subscription apps, and SaneHosts.">
-    <meta name="keywords" content="block gambling mac, self-exclusion macos, stop betting sites mac, hosts file blocklist, gambling blocker mac">
+    <title>How to Block Social Media on Mac (Hard vs Easy Mode)</title>
+    <meta name="description" content="Stop doomscrolling. Compare the 3 ways to block Instagram, TikTok, and Twitter on macOS: Manual Terminal edits, expensive subscriptions, and SaneHosts.">
+    <meta name="keywords" content="block instagram mac, block tiktok mac, stop doomscrolling macos, social media blocker mac, hosts file facebook">
     <link rel="icon" type="image/png" href="favicon.png">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="How to Block Gambling Sites on Mac (Hard vs Easy Mode)">
-    <meta property="og:description" content="System-wide protection. Manual vs Subscription vs SaneHosts.">
+    <meta property="og:title" content="How to Block Social Media on Mac (Hard vs Easy Mode)">
+    <meta property="og:description" content="Manual edits vs. Subscriptions vs. SaneHosts. Find the right blocker for you.">
     <meta property="og:image" content="https://sanehosts.com/og-image.png">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sanehosts.com/block-gambling.html">
+    <meta property="og:url" content="https://sanehosts.com/block-social-media.html">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Strict Brand Colors */
+        /* Strict Brand Colors from index.html */
         :root {
             --bg-primary: #08080c;
             --bg-secondary: #0f0f16;
@@ -187,9 +187,9 @@
     </nav>
 
     <article class="container">
-        <h1>How to Block Gambling Sites on Mac (Hard vs. Easy Mode)</h1>
-        <p>Whether you're practicing self-exclusion or removing distractions, blocking gambling sites at the browser level isn't enough. Extensions are too easy to disable. You need <strong>system-level blocking</strong> that works across Safari, Chrome, and native apps.</p>
-        <p>Here are the three ways to do it. Choose the one that fits your needs.</p>
+        <h1>How to Block Social Media on Mac (Hard vs. Easy Mode)</h1>
+        <p>If browser extensions aren't enough to stop your doomscrolling, you need to block social media at the <strong>system level</strong>. This prevents your Mac from connecting to Instagram, Twitter, or TikTok entirely, regardless of which browser you use.</p>
+        <p>There are three ways to do this. Choose the one that fits your budget and technical comfort.</p>
 
         <hr style="border: 0; border-top: 1px solid var(--border); margin: 40px 0;">
 
@@ -199,25 +199,25 @@
                 <div class="option-title">Option 1: The Hard Way (Terminal)</div>
                 <span class="option-badge badge-free">Free</span>
             </div>
-            <p>You can edit your Mac's <code>/etc/hosts</code> file manually. It costs nothing but is technically demanding and risky if you delete the wrong line.</p>
+            <p>You can edit your Mac's <code>/etc/hosts</code> file manually using the command line. It costs nothing but requires technical knowledge.</p>
             
             <pre>sudo nano /etc/hosts</pre>
-            <p>You'll need to find a blocklist (like StevenBlack's), paste thousands of domains manually, and flush your DNS cache.</p>
+            <p>Paste lines like <code>0.0.0.0 twitter.com</code> at the bottom, save, and flush DNS.</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Pros</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div>Completely free</div></li>
-                        <li><span class="icon-check">✓</span> <div>No software to install</div></li>
+                        <li><span class="icon-check">✓</span> Completely free</li>
+                        <li><span class="icon-check">✓</span> No software to install</li>
                     </ul>
                 </div>
                 <div>
                     <strong>Cons</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Very tedious to update</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Easy to break internet</div></li>
-                        <li><span class="icon-cross">✗</span> <div>No easy toggle</div></li>
+                        <li><span class="icon-cross">✗</span> tedious to toggle on/off</li>
+                        <li><span class="icon-cross">✗</span> Easy to break internet</li>
+                        <li><span class="icon-cross">✗</span> No auto-updates</li>
                     </ul>
                 </div>
             </div>
@@ -227,24 +227,24 @@
         <div class="option-card">
             <div class="option-header">
                 <div class="option-title">Option 2: The Subscription Way</div>
-                <span class="option-badge badge-sub">$49+ or Monthly</span>
+                <span class="option-badge badge-sub">$3-5 / month</span>
             </div>
-            <p>Apps like Cold Turkey or Gamban are powerful but expensive. They often use invasive system extensions or VPNs to monitor your traffic.</p>
+            <p>Apps like Freedom or Cold Turkey offer powerful blocking but often require recurring payments or expensive lifetime licenses ($40-150).</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Pros</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div>Hard to bypass</div></li>
-                        <li><span class="icon-check">✓</span> <div>Cross-device options</div></li>
+                        <li><span class="icon-check">✓</span> Scheduling features</li>
+                        <li><span class="icon-check">✓</span> Cross-device sync</li>
                     </ul>
                 </div>
                 <div>
                     <strong>Cons</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-cross">✗</span> <div>Expensive recurring cost</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Privacy invasive (monitoring)</div></li>
-                        <li><span class="icon-cross">✗</span> <div>Can slow down network</div></li>
+                        <li><span class="icon-cross">✗</span> Expensive recurring cost</li>
+                        <li><span class="icon-cross">✗</span> Often uses invasive VPNs</li>
+                        <li><span class="icon-cross">✗</span> Privacy concerns (cloud)</li>
                     </ul>
                 </div>
             </div>
@@ -256,16 +256,16 @@
                 <div class="option-title">Option 3: The Sane Way</div>
                 <span class="option-badge badge-sane">$5 One-Time</span>
             </div>
-            <p><strong>SaneHosts</strong> gives you the power of the hosts file with the safety of a modern Mac app. It includes the "StevenBlack Gambling" list built-in and auto-updates it.</p>
+            <p><strong>SaneHosts</strong> combines the power of the hosts file with the ease of a modern app. No subscription, no cloud, just native control.</p>
 
             <div class="pros-cons">
                 <div>
                     <strong>Why it wins</strong>
                     <ul class="pc-list">
-                        <li><span class="icon-check">✓</span> <div><strong>Family Safe Profile:</strong> Pre-configured to block gambling & adult content</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Touch ID Locked:</strong> Adds friction. You can't disable it without bio-auth</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Native:</strong> No background monitoring, no VPN, 100% private</div></li>
-                        <li><span class="icon-check">✓</span> <div><strong>Auto-Updates:</strong> New betting sites blocked automatically</div></li>
+                        <li><span class="icon-check">✓</span> <strong>Focus Mode:</strong> Toggle social media in 2 clicks</li>
+                        <li><span class="icon-check">✓</span> <strong>Touch ID:</strong> Locked so you can't easily disable it</li>
+                        <li><span class="icon-check">✓</span> <strong>Native:</strong> Fast, lightweight, Apple Silicon optimized</li>
+                        <li><span class="icon-check">✓</span> <strong>Privacy:</strong> 100% on-device, open source</li>
                     </ul>
                 </div>
             </div>
@@ -279,7 +279,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 SaneApps. Built for a Sound Mind.</p>
-            <p style="margin-top: 12px;"><a href="/" style="color: var(--text-muted);">Home</a> • <a href="privacy.html" style="color: var(--text-muted);">Privacy</a></p>
+            <p style="margin-top: 12px;"><a href="/" style="color: var(--text-muted);">Home</a> • <a href="block-gambling.html" style="color: var(--text-muted);">Block Gambling</a></p>
         </div>
     </footer>
 </body>
